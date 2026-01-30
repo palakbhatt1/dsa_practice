@@ -1,4 +1,4 @@
-# LeetCode Practice Archive
+# LeetCode Practice 
 
 This repository contains my solutions to **data structure and algorithm problems** solved on LeetCode as part of focused placement preparation.
 
