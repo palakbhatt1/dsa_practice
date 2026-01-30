@@ -29,4 +29,4 @@ For project-based work and applied engineering experience, please refer to my ot
 ---
 
 ## 🔗 LeetCode Profile
-https://leetcode.com/<your-username>/
+https://leetcode.com/palakbhatt01
