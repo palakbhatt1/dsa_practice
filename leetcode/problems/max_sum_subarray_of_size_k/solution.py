@@ -4,7 +4,6 @@ class Solution:
         low = 0
         high = k-1
         total = 0
-        res = 0
         
         for i in range (low, high +1):
                 total += arr[i]
