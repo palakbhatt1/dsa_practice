@@ -1,3 +1,3 @@
-This repository contains my solutions to Data Structures & Algorithms problems solved on LeetCode.
+this repo contains my accepted solutions to leetcode problems and automatically stays in sync with my leetcode submissions through a github actions workflow, so my latest accepted solutions are always here too :))
 
-🔗 https://leetcode.com/palakbhatt01
+🔗 leetcode: https://leetcode.com/palakbhatt01
