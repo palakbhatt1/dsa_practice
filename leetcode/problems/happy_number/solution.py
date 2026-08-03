@@ -4,9 +4,9 @@ class Solution:
         total = 0
 
         while n > 0:
-            digit = n % 10
-            total += digit * digit
-            n //= 10
+            d = n % 10
+            n = n//10
+            total += d*d
 
         return total
 
@@ -15,11 +15,14 @@ class Solution:
         slow = n
         fast = n
 
-        while True:
+        while fast!= 1:
             slow = self.squareSum(slow)
-            fast = self.squareSum(self.squareSum(fast))
+            fast = self.squareSum(fast)
+            fast = self.squareSum(fast)
 
-            if slow == fast:
-                break
+            if slow == fast and slow != 1:
+                return False
+            
 
-        return slow == 1
+        return True
+        
