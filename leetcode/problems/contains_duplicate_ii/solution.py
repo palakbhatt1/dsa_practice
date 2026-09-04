@@ -1,20 +1,14 @@
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         
-        last_index = {}
+        freq = {}
 
-        for i in range (len(nums)):
-            if nums[i] in last_index:
-                diff = i - last_index[nums[i]]
+        for i in range(len(nums)):
 
-                if diff<=k:
+            if nums[i] in freq:
+                if i - freq[nums[i]] <= k:
                     return True
 
-            last_index[nums[i]] = i
+            freq[nums[i]] = i
 
         return False
-
-
-
-
-            
