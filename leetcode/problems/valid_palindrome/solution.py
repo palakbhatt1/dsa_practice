@@ -1,19 +1,31 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
 
-        res = ""
+        s1 = []
 
-        for ch in s:
+        for ch in s.lower():
             if ch.isalnum():
-                res += ch
+                s1.append(ch)
 
-        org = res.lower()
+        org = s1.copy()
 
-        if org == org[::-1]:
+        left = 0
+        right = len(s1) - 1
+
+        while left < right:
+            s1[left], s1[right] = s1[right],s1[left]
+            left += 1
+            right -= 1
+        
+        rev = s1
+
+        if rev == org:
             return True
+
         else:
             return False
 
-        
 
-        
+
+
+
