@@ -1,16 +1,13 @@
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
-        
-        st = []
-        res = []
+    def reverseString(self, s: list[str]) -> None:
 
-        for i in range(len(s)):
-            st.append(s[i])
-        
-        while len(st) > 0:
-            c = st[-1]
-            st.pop()
-            res.append(c)
+        left = 0
+        right = len(s) - 1
 
-        s[:] = res
-    
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+
+        return s
+        
