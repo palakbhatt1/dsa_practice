@@ -9,8 +9,7 @@ class Solution:
         prev = None
         curr = head
 
-        while curr != None:
-
+        while curr != None :
             next_node = curr.next
             curr.next = prev
             prev = curr
