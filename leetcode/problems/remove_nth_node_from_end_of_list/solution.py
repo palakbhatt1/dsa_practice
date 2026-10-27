@@ -5,12 +5,13 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: ListNode | None, n: int) -> ListNode | None:
-        
+
+
         prev = None
         curr = head
 
         while curr != None:
-
+            
             next_node = curr.next
             curr.next = prev
             prev = curr
@@ -19,7 +20,7 @@ class Solution:
         head = prev
         curr = head
 
-        if n== 1:
+        if n == 1:
             head = head.next
 
         else:
@@ -32,13 +33,16 @@ class Solution:
         curr = head
 
         while curr != None:
-
+            
             next_node = curr.next
             curr.next = prev
             prev = curr
             curr = next_node
 
         return prev
+
+        
+       
 
 
 
